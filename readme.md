@@ -1,11 +1,15 @@
 # http-ip-list-creator
 
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 http-ip-list-creator gets all IP Adresses stored in a MySQL/MariaDB and returns them as Text over an http request.
 This list can be used to block the IPs using pfsense and pfBlockerNG IPv4 Lists
-The Database itself gets filled by an tcp service trap. Soon im going to add the database connection to my frelon/ssh-trap fork to register the IPs traped by this ssh-trap into the database.
+The Database itself gets filled by an tcp service trap. Soon im going to add the database connection to service-trap (an frelon/ssh-trap fork) to register the traped IPs into the database.
 
 This is my first Go project on github with dockerhub integration. 
 
