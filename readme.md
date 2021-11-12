@@ -1,9 +1,4 @@
 # http-ip-list-creator
-
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -21,13 +16,15 @@ This is my first Go project on github with dockerhub integration.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can install and use http-ip-list-creator on your system. It should be safer, to run it in your docker environment (Coming soon).
+You can either use http-ip-list-creator directly or over your docker enviroment
 
 ### Prerequisites
 
 You need to install [Go](https://golang.org/) to get it running
 
 ### Installation
+
+#### Directly using Go
 
 1. Clone the repo
    ```sh
@@ -40,6 +37,20 @@ You need to install [Go](https://golang.org/) to get it running
 4. Run it
    ```js
    go run .
+   ```
+
+#### On your Docker enviroment using docker-compose
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/mike-goldfinger/http-ip-list-creator.git
+   ```
+
+2. Merge and modify docker-compose.yml to your need
+
+2. Start the it:
+   ```sh
+	docker-compose -f <pathToFile>/docker-compose.yml up -d
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
