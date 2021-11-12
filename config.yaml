@@ -1,0 +1,8 @@
+HTTP_PORT: 8080
+DB_USER: blacklistuser
+DB_PASSWORD: verrysecurepassword
+DB_NAME: blacklistdb
+DB_HOST: supercluster.example.com
+DB_PORT: 3306
+DB_TABLE: bannedIPs
+DB_COLUMN: ip
