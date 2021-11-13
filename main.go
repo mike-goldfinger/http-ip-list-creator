@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-    "database/sql"
+	"database/sql"
 	"github.com/go-sql-driver/mysql"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
@@ -28,17 +28,16 @@ func init() {
 }
 
 func main() {
-	IPs, err := returnIPs()
-	if err != nil {
-		panic(err.Error())
-	}
-
 	e := echo.New()
 
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	
 	e.GET("/", func(c echo.Context) error {
+		IPs, err := returnIPs()
+		if err != nil {
+			panic(err.Error())
+		}
 		return c.String(http.StatusOK, IPs)
 	})
 
