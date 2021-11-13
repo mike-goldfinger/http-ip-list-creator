@@ -20,7 +20,7 @@ You can either use http-ip-list-creator directly or over your docker enviroment
 
 ### Prerequisites
 
-You need to install [Go](https://golang.org/) to get it running
+You need to install [Go](https://golang.org/) to get it running if not using docker
 
 ### Installation
 
@@ -30,11 +30,11 @@ You need to install [Go](https://golang.org/) to get it running
    ```sh
    git clone https://github.com/mike-goldfinger/http-ip-list-creator.git
    ```
-3. Configure it:
+2. Configure it:
    
    Set the parameters in the file config.yaml according your enviroment
    
-4. Run it
+3. Run it
    ```js
    go run .
    ```
