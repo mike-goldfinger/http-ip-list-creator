@@ -48,7 +48,7 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 
 2. Merge and modify docker-compose.yml to your need
 
-2. Start the it:
+2. Start it:
    ```sh
 	docker-compose -f <pathToFile>/docker-compose.yml up -d
    ```
@@ -60,10 +60,10 @@ You need to install [Go](https://golang.org/) to get it running if not using doc
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Configure and install the trap (coming soon)
+1. Configure and install the trap: https://github.com/mike-goldfinger/service-trap
 
-2. Configure and install this http-ip-list-creator
+2. Configure and install the list creator: https://github.com/mike-goldfinger/http-ip-list-creator
 
-3. Forward the tcp port you want to use as trap to the ssh trap docker container
+3. Forward the tcp port you want to use as trap to the ssh trap docker container or start it directly on your server using go
 
 4. Install pfBlockerNG into your pfsense Firewall and set it up to get the IP list from http-ip-list-creator
